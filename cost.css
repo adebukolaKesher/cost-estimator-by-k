@@ -15,6 +15,7 @@ h1{
 background-color: white;
 width: 100%;
 max-width: 900px;
+box-sizing: border-box;
 display: flex;
 flex-direction:column;
 justify-content: center;
@@ -186,7 +187,11 @@ margin: 0 16px;
     font-weight: bold;
     color: rgb(83, 49, 156);
     text-transform: uppercase;
+    transition: 0.15s transform ease;
 } 
+.card:hover{
+    transform: translateY(-8px);
+}
 .card .top-section{
     margin: 8px;
 }
@@ -201,4 +206,19 @@ margin: 0 16px;
     width: 30%;
     border: 1px solid rgb(210, 210, 210);
     border-radius: 2px;
-}
+} 
+.card button{
+    border: none;
+    color: white;
+    background-color: rgb(83, 49, 156);
+    padding: 16px;
+    border-radius: 10px;
+    transition: 0.15s transform ease;
+    font-weight: bold;
+    margin: 8px 0;
+
+} 
+.card button:hover{
+    cursor: pointer;
+    transform:scale(1.05);
+} 
